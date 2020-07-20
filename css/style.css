@@ -1,0 +1,84 @@
+:root {
+  --prymary-text-color: #212121;
+  --title-text-color: rgba(75, 75, 75, 1);
+  --accent-color: #2196f3;
+  --backgraund-footer: rgba(47, 48, 58, 1);
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--prymary-text-color);
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: var(--prymary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.section-title {
+  color: var(--prymary-text-color);
+}
+
+.paragraf-text {
+  color: var(--title-text-color);
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.footer {
+  background-color: var(--backgraund-footer);
+}
+
+.footer-web {
+  color: #2196f3;
+}
+
+.footer-studio {
+  color: #ffffff;
+}
+
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.hero-text {
+  color: #ffffff;
+}
+
+.filters-text {
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.filters-list :hover,
+.filters-list :focus {
+  color: var(--accent-color);
+}
+.images-modification :hover,
+.images-modification :focus
