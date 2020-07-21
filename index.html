@@ -4,22 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
   </head>
   <body>
     <header>
-      <a href="./index.html" class="logo"
-        ><span class="logo-web">Web</span> Studio</a
-      >
       <nav>
+        <a href="./index.html" class="logo"
+          ><span class="logo-web">Web</span> Studio</a
+        >
+
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a class="link" href="">Студия</a></li>
+          <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="nav-contact list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -34,7 +49,7 @@
         <ul>
           <li>
             <img src="./images/logo_special_1.svg" alt="Логотип антены" />
-            <h3>Внимание к деталям</h3>
+            <h3 class="work-principles">Внимание к деталям</h3>
             <p class="paragraf-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
@@ -42,7 +57,7 @@
           </li>
           <li>
             <img src="./images/logo_special_2.svg" alt="Логотип часов" />
-            <h3>Пунктуальность</h3>
+            <h3 class="work-principles">Пунктуальность</h3>
             <p class="paragraf-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
@@ -50,7 +65,7 @@
           </li>
           <li>
             <img src="./images/logo_special_3.svg" alt="Логотип диаграмы" />
-            <h3>Планирование</h3>
+            <h3 class="work-principles">Планирование</h3>
             <p class="paragraf-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
@@ -58,12 +73,34 @@
           </li>
           <li>
             <img src="./images/logo_special_4.svg" alt="Логотип астронавта" />
-            <h3>Современные технологии</h3>
+            <h3 class="work-principles">Современные технологии</h3>
             <p class="paragraf-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
+        </ul>
+      </section>
+      <!--Чем мы занимаемся-->
+      <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul>
+          <li>
+            <img src="./images/desctopfoto.JPG" alt="Фотография компьютера" />
+          </li>
+          <p class="our-classes">Десктопные приложения</p>
+          <li>
+            <img
+              src="./images/mobilefoto.JPG"
+              alt="Фотография мобильного
+                      телефона"
+            />
+          </li>
+          <p class="our-classes">Мобильные приложения</p>
+          <li>
+            <img src="./images/tablefoto.JPG" alt="Фотография планшета" />
+          </li>
+          <p class="our-classes">Дизайнерские решения</p>
         </ul>
       </section>
       <!--Наша команда-->
@@ -76,8 +113,8 @@
               alt="Фото Николай Курченко"
               width="270"
             />
-            <h3>Николай Курченко</h3>
-            <p class="paragraf-text" lang="eng">Product Designer</p>
+            <h3 class="team-member-name">Николай Курченко</h3>
+            <p class="profession" lang="eng">Product Designer</p>
             <ul>
               <li>
                 <a href="#"
@@ -95,10 +132,11 @@
               </li>
             </ul>
           </li>
+
           <li>
             <img src="./images/olga.JPG" alt="Фото Ольга Иванова" width="270" />
-            <h3>Ольга Иванова</h3>
-            <p class="paragraf-text" lang="eng">Frontend Developer</p>
+            <h3 class="team-member-name">Ольга Иванова</h3>
+            <p class="profession" lang="eng">Frontend Developer</p>
             <ul>
               <li>
                 <a href="#"
@@ -118,8 +156,8 @@
           </li>
           <li>
             <img src="./images/andrei.JPG" alt="Фото Андрея Шевченко" />
-            <h3>Андрей Шевченко</h3>
-            <p class="paragraf-text" lang="eng">Marketing</p>
+            <h3 class="team-member-name">Андрей Шевченко</h3>
+            <p class="profession" lang="eng">Marketing</p>
             <ul>
               <li>
                 <a href="#"
@@ -139,8 +177,8 @@
           </li>
           <li>
             <img src="./images/ivan.JPG" alt="Фото Ивана Николаева" />
-            <h3>Иван Николаев</h3>
-            <p class="paragraf-text" lang="eng">UI Designer</p>
+            <h3 class="team-member-name">Иван Николаев</h3>
+            <p class="profession" lang="eng">UI Designer</p>
             <ul>
               <li>
                 <a href="#"
@@ -158,28 +196,6 @@
               </li>
             </ul>
           </li>
-        </ul>
-      </section>
-      <!--Чем мы занимаемся-->
-      <section class="section">
-        <h2 class="secton-title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./images/desctopfoto.JPG" alt="Фотография компьютера" />
-          </li>
-          <p class="paragraf-text">Десктопные приложения</p>
-          <li>
-            <img
-              src="./images/mobilefoto.JPG"
-              alt="Фотография мобильного
-          телефона"
-            />
-          </li>
-          <p class="paragraf-text">Мобильные приложения</p>
-          <li>
-            <img src="./images/tablefoto.JPG" alt="Фотография планшета" />
-          </li>
-          <p class="paragraf-text">Дизайнерские решения</p>
         </ul>
       </section>
       <!--Постоянные клиенты-->
