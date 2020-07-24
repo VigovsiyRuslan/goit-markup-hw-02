@@ -131,15 +131,29 @@ ul {
 }
 
 .filters-text {
-  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
+  background: #F5F4FA;
+  border-radius: 4px;
 }
+
+.paragraf-text {
+  color: #757575;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+}
+
 .filters-list :hover,
 .filters-list :focus {
   color: var(--accent-color);
 }
 .images-modification :hover,
-.images-modification :focus b {
+.images-modification :focus {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
